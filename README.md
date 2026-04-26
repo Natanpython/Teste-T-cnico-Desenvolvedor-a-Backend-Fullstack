@@ -118,7 +118,7 @@ A lógica de negócio, implementação do backend, frontend e testes foram desen
 ##  Arquitetura
 
 A aplicação foi organizada em camadas, separando responsabilidades entre interface, API, regras de negócio, ORM e banco de dados.
-
+```txt
 ┌────────────────────────────┐
 │        Frontend React       │
 │  Vite + React Router + UI   │
@@ -201,7 +201,28 @@ Resposta JSON
 - tipagem forte
 - facilidade de uso
 - migrations organizadas
+```
+## no bash
+- git clone https://github.com/Natanpython/Teste-T-cnico-Desenvolvedor-a-Backend-Fullstack
 
-## no Bash
+## cd backend
 
-git clone 
+pnpm install
+docker compose up -d
+pnpm prisma migrate dev
+pnpm prisma generate
+pnpm start:dev
+
+## Swagger
+http://localhost:3000/docs
+
+## cd frontend
+
+cd frontend
+
+pnpm install
+pnpm dev
+
+## Teste Playwright
+
+pnpm exec playwright test
