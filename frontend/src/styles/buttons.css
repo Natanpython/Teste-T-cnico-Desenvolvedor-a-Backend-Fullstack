@@ -1,0 +1,51 @@
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.primary-button,
+.secondary-button,
+.filter-row button,
+.actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.primary-button,
+.filter-row button {
+  background: linear-gradient(135deg, #4f46e5, #2563eb);
+  color: white;
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.25);
+}
+
+.primary-button:hover,
+.filter-row button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(79, 70, 229, 0.34);
+}
+
+.secondary-button {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.secondary-button:hover {
+  background: #d1d5db;
+}
+
+.actions button {
+  flex: 1;
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.actions .danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}

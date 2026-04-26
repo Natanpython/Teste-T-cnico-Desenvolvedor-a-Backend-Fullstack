@@ -1,0 +1,113 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.58);
+  backdrop-filter: blur(8px);
+}
+
+.modal-card {
+  width: min(640px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 30px 90px rgba(15, 23, 42, 0.35);
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 28px 28px 0;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+}
+
+.close-button {
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.close-button:hover {
+  background: #e2e8f0;
+}
+
+.modal-form {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 6px;
+}
+
+@media (max-width: 640px) {
+  .modal-actions {
+    flex-direction: column-reverse;
+  }
+}
+
+.confirm-card {
+  width: min(460px, 100%);
+  padding: 28px;
+  border-radius: 28px;
+  background: white;
+  box-shadow: 0 30px 90px rgba(15, 23, 42, 0.35);
+  text-align: center;
+}
+
+.confirm-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 16px;
+  border-radius: 999px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.confirm-card h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.confirm-card p {
+  margin: 12px 0 24px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.delete-button {
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 18px;
+  background: #dc2626;
+  color: white;
+  font-weight: 800;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
