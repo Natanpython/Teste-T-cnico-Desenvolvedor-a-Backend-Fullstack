@@ -207,20 +207,20 @@ Resposta JSON
 
 ## cd backend
 
---pnpm install
---docker compose up -d
---pnpm prisma migrate dev
---pnpm prisma generate
---pnpm start:dev
+- pnpm install
+- docker compose up -d
+- pnpm prisma migrate dev
+- pnpm prisma generate
+- pnpm start:dev
 
 ## Swagger
---http://localhost:3000/docs
+- http://localhost:3000/docs
 
 ## cd frontend
 
---pnpm install
---pnpm dev
+- pnpm install
+- pnpm dev
 
 ## Teste Playwright
 
---pnpm exec playwright test
+- pnpm exec playwright test
